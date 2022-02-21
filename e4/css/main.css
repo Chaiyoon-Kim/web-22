@@ -1,0 +1,54 @@
+body {
+  background-color: #2D2926;
+  margin: 0;
+  font-size: 50px;
+  font-family: 'futura', serif;
+}
+p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ed6f63;
+  font-weight: bold;
+  text-align: center;
+  line-height: .1em;
+}
+.bigger {
+  font-size: 3em;
+  padding-top: .2em;
+}
+div {
+  margin-top: 40vh;
+}
+.mobile-only {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #ed6f63;
+  }
+  p {
+    color: #2D2926;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+}
+
+* @media only screen and (min-width: 768px) {
+  body {
+    background-color: pink;
+  }
+  p {
+    color: crimson;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+} *
